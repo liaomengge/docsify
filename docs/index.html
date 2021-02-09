@@ -18,8 +18,10 @@
         name: 'Liaomengge’s Blog',
         repo: 'https://github.com/liaomengge/base',
         coverpage: true,
-        themeColor: '#25798A',
         loadSidebar: true,
+        subMaxLevel: 3,
+        maxLevel: 4,
+        themeColor: '#25798A',
         search: {
           maxAge: 86400000, // 过期时间，单位毫秒，默认一天
           noData: '找不到结果',//搜索不到结果时显示
@@ -28,15 +30,19 @@
         }
       }
     </script>
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    <!-- Docsify v4 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <!-- 主题 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <!-- 搜索 -->
     <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
     <!-- 代码高亮 -->
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+    <!-- emoji -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+    <!-- 代码即时预览和 jsfiddle 集成 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   </body>
 </html>
