@@ -225,7 +225,11 @@
 
      基础bom包，统一管理项目依赖Jar
 
-3. ### 升级
+   - **base-skeleton-initializr（未开源）**
+
+     base脚手架
+
+3. ### 迭代升级
 
    base-* 2020.x.x 支持（同步更新springcloud 2020.x.x）
 
@@ -246,8 +250,6 @@
    > ......
 
 5. ### 附
-
-   base脚手架（暂未开源）
 
    [gradle mybatis自动生成](https://github.com/liaomengge/base-mybatis-generator-plugin)
 
