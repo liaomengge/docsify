@@ -7,11 +7,11 @@
    > ```xml
    > <repositories>
    > <repository>
-   >   <id>aliyun-maven</id>
-   >   <name>aliyun maven</name>
-   >   <url>https://maven.aliyun.com/repository/public</url>
-   >   <releases><enabled>true</enabled></releases>
-   >   <snapshots><enabled>true</enabled><updatePolicy>always</updatePolicy></snapshots>
+   > <id>aliyun-maven</id>
+   > <name>aliyun maven</name>
+   > <url>https://maven.aliyun.com/repository/public</url>
+   > <releases><enabled>true</enabled></releases>
+   > <snapshots><enabled>true</enabled><updatePolicy>always</updatePolicy></snapshots>
    > </repository>
    > </repositories>
    > 
@@ -19,15 +19,15 @@
    >
    > ```xml
    > <dependencyManagement>
-   >   <dependencies>
-   >       <dependency>
-   >           <groupId>com.github.liaomengge</groupId>
-   >           <artifactId>base-framework-bom</artifactId>
-   >           <version>${latest-release-version}</version>
-   >           <type>pom</type>
-   >           <scope>import</scope>
-   >       </dependency>
-   >   </dependencies>
+   > <dependencies>
+   > <dependency>
+   >     <groupId>com.github.liaomengge</groupId>
+   >     <artifactId>base-framework-bom</artifactId>
+   >     <version>${latest-release-version}</version>
+   >     <type>pom</type>
+   >     <scope>import</scope>
+   > </dependency>
+   > </dependencies>
    > </dependencyManagement>
    > ```
    >
@@ -35,19 +35,19 @@
    >
    > ```groovy
    > repositories {
-   >   mavenLocal()
-   >   maven { url 'https://maven.aliyun.com/repository/public' }
-   >   maven { url 'https://maven.aliyun.com/repository/spring' }
-   >   maven { url 'https://maven.aliyun.com/repository/spring-plugin' }
-   >   mavenCentral()
+   > mavenLocal()
+   > maven { url 'https://maven.aliyun.com/repository/public' }
+   > maven { url 'https://maven.aliyun.com/repository/spring' }
+   > maven { url 'https://maven.aliyun.com/repository/spring-plugin' }
+   > mavenCentral()
    > }
    > ```
    >
    > ```groovy
    > dependencyManagement {
-   >   imports {
-   >       mavenBom "com.github.liaomengge:base-framework-bom:${latest-release-version}"
-   >   }
+   > imports {
+   > mavenBom "com.github.liaomengge:base-framework-bom:${latest-release-version}"
+   > }
    > }
    > ```
 
@@ -58,11 +58,11 @@
    > ```xml
    > <repositories>
    > <repository>
-   >   <id>sonatype-nexus-snapshots</id>
-   >   <name>Sonatype Nexus Snapshots</name>
-   >   <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-   >   <releases><enabled>false</enabled></releases>
-   >   <snapshots><enabled>true</enabled><updatePolicy>always</updatePolicy></snapshots>
+   > <id>sonatype-nexus-snapshots</id>
+   > <name>Sonatype Nexus Snapshots</name>
+   > <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+   > <releases><enabled>false</enabled></releases>
+   > <snapshots><enabled>true</enabled><updatePolicy>always</updatePolicy></snapshots>
    > </repository>
    > </repositories>
    > 
@@ -70,15 +70,15 @@
    >
    > ```xml
    > <dependencyManagement>
-   >   <dependencies>
-   >       <dependency>
-   >           <groupId>com.github.liaomengge</groupId>
-   >           <artifactId>base-framework-bom</artifactId>
-   >           <version>${latest-snapshot-version}</version>
-   >           <type>pom</type>
-   >           <scope>import</scope>
-   >       </dependency>
-   >   </dependencies>
+   > <dependencies>
+   > <dependency>
+   >     <groupId>com.github.liaomengge</groupId>
+   >     <artifactId>base-framework-bom</artifactId>
+   >     <version>${latest-snapshot-version}</version>
+   >     <type>pom</type>
+   >     <scope>import</scope>
+   > </dependency>
+   > </dependencies>
    > </dependencyManagement>
    > ```
    >
@@ -86,24 +86,22 @@
    >
    > ```groovy
    > repositories {
-   >   mavenLocal()
-   >   maven { url 'https://maven.aliyun.com/repository/public' }
-   >   maven { url 'https://maven.aliyun.com/repository/spring' }
-   >   maven { url 'https://maven.aliyun.com/repository/spring-plugin' }
-   >   maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
-   >   mavenCentral()
+   > mavenLocal()
+   > maven { url 'https://maven.aliyun.com/repository/public' }
+   > maven { url 'https://maven.aliyun.com/repository/spring' }
+   > maven { url 'https://maven.aliyun.com/repository/spring-plugin' }
+   > maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+   > mavenCentral()
    > }
    > ```
    >
    > ```groovy
    > dependencyManagement {
-   >   imports {
-   >       mavenBom "com.github.liaomengge:base-framework-bom:${latest-snapshot-version}"
-   >   }
+   > imports {
+   > mavenBom "com.github.liaomengge:base-framework-bom:${latest-snapshot-version}"
+   > }
    > }
    > ```
-
-   ### 
 
 2. ### 模块说明
 
@@ -112,11 +110,11 @@
    ├── base-common-cache -- 一二级缓存
    ├── base-common-dayu -- redis熔断降级
    ├── base-common-middleware -- activemq/rabbitmq封装
-   ├── base-common-starter -- 常用starter
-   ├── base-common-utils -- 常用工具集
+   ├── base-common-starter -- 常用starter（常维护）
+   ├── base-common-utils -- 常用工具集（常维护）
    ├── base-dubbo-framework -- 项目dubbo简易封装
-   ├── base-spring-cloud-framework -- 项目springcloud封装
-   └── base-platform-bom -- sb/sc/sca等依赖bom
+   ├── base-spring-cloud-framework -- 项目springcloud封装（常维护）
+   └── base-platform-bom -- sb/sc/sca等依赖bom（常维护）
         ├── base-framework-bom -- base-framework依赖bom
    ```
 
@@ -231,9 +229,23 @@
 
 3. ### 升级
 
-   **base-* 2020.x.x 支持（同步更新springcloud 2020.x.x）**
+   base-* 2020.x.x 支持（同步更新springcloud 2020.x.x）
 
-4. ### 规划base-plus-*（暂不开源，开发ing）
+4. ### 规划base-plus-*（暂不开源）
+
+   > **灰度**
+   >
+   > - 可以参考nepxion，见总结
+   >
+   > **无损流量**
+   >
+   > - 无损上下线，provider上下线，及时通知对应consumer刷新调用实例
+   >
+   > **动态流量**
+   >
+   > - 依据provider实例运行状态，打分（实例启动时间；cpu、内存、磁盘等负载；线程池情况等），分配不同的权重
+   >
+   > ......
 
 5. ### 附
 
@@ -242,5 +254,4 @@
    [gradle mybatis自动生成](https://github.com/liaomengge/base-mybatis-generator-plugin)
 
    [mybatis插件定制](https://github.com/liaomengge/base-mybatis-plugin)
-
 
