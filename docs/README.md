@@ -6,28 +6,32 @@
    >
    > ```xml
    > <repositories>
-   > <repository>
-   > <id>aliyun-maven</id>
-   > <name>aliyun maven</name>
-   > <url>https://maven.aliyun.com/repository/public</url>
-   > <releases><enabled>true</enabled></releases>
-   > <snapshots><enabled>true</enabled><updatePolicy>always</updatePolicy></snapshots>
-   > </repository>
+   >     <repository>
+   >         <id>aliyun-maven</id>
+   >         <name>aliyun maven</name>
+   >         <url>https://maven.aliyun.com/repository/public</url>
+   >         <releases>
+   >             <enabled>true</enabled>
+   >         </releases>
+   >         <snapshots>
+   >             <enabled>true</enabled>
+   >             <updatePolicy>always</updatePolicy>
+   >         </snapshots>
+   >     </repository>
    > </repositories>
-   > 
    > ```
    >
    > ```xml
    > <dependencyManagement>
-   > <dependencies>
-   > <dependency>
-   >     <groupId>com.github.liaomengge</groupId>
-   >     <artifactId>base-framework-bom</artifactId>
-   >     <version>${latest-release-version}</version>
-   >     <type>pom</type>
-   >     <scope>import</scope>
-   > </dependency>
-   > </dependencies>
+   >     <dependencies>
+   >         <dependency>
+   >             <groupId>com.github.liaomengge</groupId>
+   >             <artifactId>base-framework-bom</artifactId>
+   >             <version>${latest-release-version}</version>
+   >             <type>pom</type>
+   >             <scope>import</scope>
+   >         </dependency>
+   >     </dependencies>
    > </dependencyManagement>
    > ```
    >
@@ -35,19 +39,19 @@
    >
    > ```groovy
    > repositories {
-   > mavenLocal()
-   > maven { url 'https://maven.aliyun.com/repository/public' }
-   > maven { url 'https://maven.aliyun.com/repository/spring' }
-   > maven { url 'https://maven.aliyun.com/repository/spring-plugin' }
-   > mavenCentral()
+   >   mavenLocal()
+   >   maven { url 'https://maven.aliyun.com/repository/public' }
+   >   maven { url 'https://maven.aliyun.com/repository/spring' }
+   >   maven { url 'https://maven.aliyun.com/repository/spring-plugin' }
+   >   mavenCentral()
    > }
    > ```
    >
    > ```groovy
    > dependencyManagement {
-   > imports {
-   > mavenBom "com.github.liaomengge:base-framework-bom:${latest-release-version}"
-   > }
+   >   imports {
+   >     mavenBom "com.github.liaomengge:base-framework-bom:${latest-release-version}"
+   >   }
    > }
    > ```
 
@@ -57,28 +61,33 @@
    >
    > ```xml
    > <repositories>
-   > <repository>
-   > <id>sonatype-nexus-snapshots</id>
-   > <name>Sonatype Nexus Snapshots</name>
-   > <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-   > <releases><enabled>false</enabled></releases>
-   > <snapshots><enabled>true</enabled><updatePolicy>always</updatePolicy></snapshots>
-   > </repository>
+   >     <repository>
+   >         <id>sonatype-nexus-snapshots</id>
+   >         <name>Sonatype Nexus Snapshots</name>
+   >         <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+   >         <releases>
+   >             <enabled>false</enabled>
+   >         </releases>
+   >         <snapshots>
+   >             <enabled>true</enabled>
+   >             <updatePolicy>always</updatePolicy>
+   >         </snapshots>
+   >     </repository>
    > </repositories>
    > 
    > ```
    >
    > ```xml
    > <dependencyManagement>
-   > <dependencies>
-   > <dependency>
-   >     <groupId>com.github.liaomengge</groupId>
-   >     <artifactId>base-framework-bom</artifactId>
-   >     <version>${latest-snapshot-version}</version>
-   >     <type>pom</type>
-   >     <scope>import</scope>
-   > </dependency>
-   > </dependencies>
+   >     <dependencies>
+   >         <dependency>
+   >             <groupId>com.github.liaomengge</groupId>
+   >             <artifactId>base-framework-bom</artifactId>
+   >             <version>${latest-snapshot-version}</version>
+   >             <type>pom</type>
+   >             <scope>import</scope>
+   >         </dependency>
+   >     </dependencies>
    > </dependencyManagement>
    > ```
    >
@@ -86,20 +95,20 @@
    >
    > ```groovy
    > repositories {
-   > mavenLocal()
-   > maven { url 'https://maven.aliyun.com/repository/public' }
-   > maven { url 'https://maven.aliyun.com/repository/spring' }
-   > maven { url 'https://maven.aliyun.com/repository/spring-plugin' }
-   > maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
-   > mavenCentral()
+   >   mavenLocal()
+   >   maven { url 'https://maven.aliyun.com/repository/public' }
+   >   maven { url 'https://maven.aliyun.com/repository/spring' }
+   >   maven { url 'https://maven.aliyun.com/repository/spring-plugin' }
+   >   maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+   >   mavenCentral()
    > }
    > ```
    >
    > ```groovy
    > dependencyManagement {
-   > imports {
-   > mavenBom "com.github.liaomengge:base-framework-bom:${latest-snapshot-version}"
-   > }
+   >   imports {
+   >     mavenBom "com.github.liaomengge:base-framework-bom:${latest-snapshot-version}"
+   >   }
    > }
    > ```
 
