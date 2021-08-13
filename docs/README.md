@@ -119,12 +119,12 @@
    ├── base-common-cache -- 一二级缓存（维护）
    ├── base-common-dayu -- redis熔断降级（维护）
    ├── base-common-middleware -- activemq/rabbitmq封装（维护）
-   ├── base-common-starter -- 常用starter（持续开发）
-   ├── base-common-utils -- 常用工具集（持续开发）
+   ├── base-common-starter -- 常用starter（持续开发）⭐
+   ├── base-common-utils -- 常用工具集（持续开发）⭐
    ├── base-dubbo-framework -- 项目dubbo简易封装（维护）
-   ├── base-spring-cloud-framework -- 项目springcloud封装（持续开发）
-   └── base-platform-bom -- sb/sc/sca等依赖bom（持续开发）
-        ├── base-framework-bom -- base-framework依赖bom（持续开发）
+   ├── base-spring-cloud-framework -- 项目springcloud封装（持续开发）⭐
+   └── base-platform-bom -- sb/sc/sca等依赖bom（持续开发）⭐
+        ├── base-framework-bom -- base-framework依赖bom（持续开发）⭐
    ```
 
    **注：**目前主要维护的是`base-common-utils，base-common-starter，base-spring-cloud-framework，base-platform-bom`等分支，其他moudle已经很久没有维护了 ~~~ 
