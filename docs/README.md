@@ -127,7 +127,7 @@
         ├── base-framework-bom -- base-framework依赖bom（持续开发）⭐
    ```
 
-   **注：**目前主要持续开发的是`base-common-utils，base-common-starter，base-spring-cloud-framework，base-platform-bom`等分支，其他moudle已经很久没有维护了 ~~~ 
+   **注：**目前主要持续开发的是`base-common-utils，base-common-starter，base-spring-cloud-framework，base-platform-bom`等分支，其他moudle已经很久没有迭代开发了 ~~~
 
    - **base-common-utils**
 
