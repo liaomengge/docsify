@@ -135,7 +135,7 @@
 
    - **base-common-starter**
 
-     基础starter包，提供项目常用的starter，便于快速使用
+     基础starter包，提供项目常用的starter，便于快速使用（以只列出部分，更多使用参考源码，后续会附上每一个的case案例）
 
      > 1. *base-apollo-spring-boot-starter*
      >    - 支持EnvironmentChangeEvent，@RefreshScope实时刷新
@@ -162,9 +162,11 @@
      > 9. *base-fastjson-spring-boot-starter*
      >    - fastjson封装
      > 10. *base-feign-spring-boot-starter*
-     >     - 支持hystrix和sentinel注解fallback（默认：打印fallback日志，可以定制返回结果集）
-     >     - 支持feign日志，header传递，以及封装okhttp等
-     >     - 新增@FeignClient缓存，便于动态新增Eager加载
+     >
+     >    - 支持hystrix和sentinel注解fallback（默认：打印fallback日志，可以定制返回结果集）
+     >    - 支持feign日志，header传递，以及封装okhttp等
+     >    - 新增@FeignClient缓存，便于动态新增Eager加载
+     >
      > 11. *base-framework-spring-boot-starter*
      >     - 封装framework常用的使用
      > 12. *base-graceful-spring-boot-starter*
@@ -230,7 +232,7 @@
 
    - **base-skeleton-initializr（未开源）**
 
-     base脚手架，快速搭建项目
+     base脚手架，快速搭建项目（传统MVC，DDD）
 
 3. ### 迭代升级
 
@@ -248,7 +250,17 @@
    >
    > **预热，动态权重**
    >
-   > - 依据provider实例运行状态，打分（实例启动时间；cpu、内存、磁盘等负载；线程池情况等），分配不同的权重
+   > - 依据provider实例运行状态，打分决策（实例启动时间；cpu、内存、磁盘等负载；线程池情况等），分配不同的权重
+   >
+   > **分布式**
+   >
+   > - 分布式ID（Snowflake，Leaf二开）
+   > - 分布式锁（Redis，Zookeeper）
+   >
+   > - 分布式事务（Rocketmq事务消息）
+   >
+   > - 分布式任务定时调度（Xxl-Job二开）
+   > - 分布式任务延时调度
    >
    > ......
 
