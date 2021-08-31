@@ -135,7 +135,7 @@
 
    - **base-common-starter**
 
-     基础starter包，提供项目常用的starter，便于快速使用（以只列出部分，更多使用参考源码，后续会附上每一个的case案例）
+     基础starter包，提供项目常用的starter，便于快速使用（以只列出部分功能，更多使用参考源码，后续会附上每个的case案例）
 
      > 1. *base-apollo-spring-boot-starter*
      >    - 支持EnvironmentChangeEvent，@RefreshScope实时刷新
@@ -242,7 +242,7 @@
 
    > **蓝绿灰度**
    >
-   > - 可以参考nepxion，见总结
+   > - 可以参考nepxion，见总结[Nepxion整理](https://github.com/liaomengge/base-doc/blob/main/Nepxion.md)
    >
    > **无损流量**
    >
@@ -256,8 +256,8 @@
 
 5. ### 待开源项目
 
-   > - **x-job**（基于xxl-job 2.3.0版本二开）
-   > - **x-gateway**（类似apisix功能，依赖springcloud gateway H版本开发）
+   > - [X-Job](https://github.com/liaomengge/base-doc/blob/main/X-Job.md) 【基于xxl-job 2.3.0版本二开】
+   > - [X-Gateway](https://github.com/liaomengge/base-doc/blob/main/X-Gateway.md) 【界面类似apisix功能，依赖springcloud gateway H版本开发】
 
 6. ### 附
 
